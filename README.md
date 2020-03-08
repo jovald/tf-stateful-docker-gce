@@ -1,4 +1,4 @@
-# Stateful provisioning for a Grav Docker Compose application into Google Compute Engine with a domain in Cloudflare
+# Stateful provisioning a Docker Compose application into Google Compute Engine with a domain in Cloudflare | CMS Grav
 
 The application is a [Grav project](https://getgrav.org/).
 
