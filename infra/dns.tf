@@ -5,13 +5,13 @@ provider "cloudflare" {
 
 data "google_compute_instance" "webserver" {
   name = google_compute_instance.webserver.name
-  zone = var.zone
+  zone = var.gcp_zone
 }
 
 resource "cloudflare_record" "www" {
   depends_on = [google_compute_instance.webserver]
   zone_id    = var.cloudflare_zone_id
-  name       = "www"
+  name       = var.cloud_flare_record_name
   value      = data.google_compute_instance.webserver.network_interface.0.access_config.0.nat_ip
   type       = "A"
   proxied    = true
