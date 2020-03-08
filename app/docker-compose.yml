@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  web:
+    build: .
+    image: in3:webserver
+    container_name: webserver
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./user:/grav/user
+    logging:
+        options:
+            max-size: '10k'
+            max-file: '1'
