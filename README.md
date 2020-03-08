@@ -9,7 +9,7 @@ Rename `terraform.tfvars.copy` to `terraform.tfvars` and fill the variables:
 cloud_flare_api_token = "<CLOUD_FLARE_API>"
 cloudflare_zone_id    = "<CLOUD_FLARE_ZONE_ID>"
 gcp_project           = "<GCP_PROJECT_ID>"
-gce_ssh_user          = "runner" # Leave this, or modify cloud-init.conf for whit different user
+gce_ssh_user          = "runner" # Leave this, or modify cloud-init.conf whith different user
 gce_ssh_pub_key_file  = "<YOUR_SSH_PUBLIC_KEY_PATH>"
 gce_ssh_priv_key_file = "<YOUR_SSH_PRIVATE_KEY_PATH>"
 ```
