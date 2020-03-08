@@ -12,10 +12,6 @@ variable "gcp_zone" {
   default = "us-central1-a"
 }
 
-variable "domain" {
-  type = string
-}
-
 variable "gcp_network_name" {
   type    = string
   default = "default"
