@@ -1,4 +1,6 @@
-# Stateful provisioning for Docker Compose application into Google Compute Engine with a domain in Cloudflare
+# Stateful provisioning for a Grav Docker Compose application into Google Compute Engine with a domain in Cloudflare
+
+The application is a [Grav project](https://getgrav.org/).
 
 ## Variables
 Rename `terraform.tfvars.copy` to `terraform.tfvars` and fill the variables:
